@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""module: Rectangle
-The module provide a rectangle class.
+"""module: rectangle
+this module contains the class Rectangle ...
 """
 class Rectangle:
     number_of_instances = 0
