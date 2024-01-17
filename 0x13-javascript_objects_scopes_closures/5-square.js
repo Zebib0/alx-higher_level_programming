@@ -33,4 +33,12 @@ class Rectangle {
     this.height *= 2;
   }
 }
+
 module.exports = Rectangle;
+
+class Square extends Rectangle {
+  constructor (w) {
+    super(w, w);
+  }
+}
+module.exports = Square;
