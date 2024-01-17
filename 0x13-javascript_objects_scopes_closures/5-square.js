@@ -14,12 +14,23 @@ class Rectangle {
       return;
     }
     for (let i = 0; i < this.height; i++) {
-      let row = '';
-      for (let j = 0; j < this.width; j++) {
-        row += 'X';
-      }
-      console.log(row);
+      console.log('X'.repeat(this.width));
     }
+  }
+
+  rotate () {
+    if (!this.width || !this.height) {
+      return;
+    }
+    [this.width, this.height] = [this.height, this.width];
+  }
+
+  double () {
+    if (!this.width || !this.height) {
+      return;
+    }
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 module.exports = Rectangle;
